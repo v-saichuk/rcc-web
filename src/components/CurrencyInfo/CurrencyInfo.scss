@@ -1,0 +1,13 @@
+.currency-info {
+    display: flex;
+    flex-direction: column;
+
+    &__content {
+        display: flex;
+        align-items: center;
+
+        &>strong {
+            margin: 0 3px;
+        }
+    }
+}

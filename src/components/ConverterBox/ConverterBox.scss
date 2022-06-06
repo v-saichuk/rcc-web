@@ -1,0 +1,41 @@
+.converter-box {
+    border: 1px solid #cdd7e7;
+    width: 100%;
+    padding: 10px 20px;
+    transition: .3s;
+
+    &:focus-within {
+        border: 1px solid #ffa633;
+    }
+
+    &__action {
+        display: flex;
+        align-items: center;
+        margin: 10px 0;
+        justify-content: space-between;
+    }
+
+    &__form-control {
+        min-width: 90px !important;
+    }
+
+    &__input {
+        width: 100%;
+        outline: none;
+        border: 0;
+        font-size: 30px;
+        font-weight: bold;
+
+    }
+
+    &__title {
+        text-transform: uppercase;
+        transition: .3s;
+
+    }
+
+}
+
+.converter-box:focus-within .converter-box__title {
+    color: #ffa633
+}

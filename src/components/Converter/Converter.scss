@@ -1,0 +1,36 @@
+.converter {
+    padding: 25px 20px;
+    background-color: #fff;
+
+    &__info {
+        margin: 10px 0 5px;
+        display: flex;
+        align-items: center;
+
+        &>strong {
+            margin: 0 5px;
+        }
+    }
+
+    &__main {
+        display: flex;
+        align-items: center;
+
+        @media only screen and (max-width : 600px) {
+            flex-direction: column;
+        }
+    }
+
+    &__svg {
+        margin: 0 10px;
+        width: 75px;
+        height: 17px;
+        transition: .3s;
+
+        @media only screen and (max-width : 600px) {
+            margin: 10px 0;
+            width: 25px;
+            transform: rotate(90deg);
+        }
+    }
+}
